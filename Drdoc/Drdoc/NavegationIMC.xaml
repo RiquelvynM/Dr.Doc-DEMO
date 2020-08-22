@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Drdoc.NavegationIMC">
+  <!--Pages can be added as references or inline-->
+    <ContentPage>
+
+        <Grid>
+
+            <Image Source="logo.jpeg" Aspect="AspectFill"/>
+
+            <BoxView Color="White" Opacity="0.8"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <StackLayout>
+                    <Label Text="Cálculo de IMC"/>
+                    <Image Source="peso.jpg" Aspect="AspectFill"/>
+                    <Label Text="Ingrese sus datos"/>
+
+                    <Entry Placeholder="Altura (en metros)"/>
+                    <Entry Placeholder="Masa Corporal (en kilogramos)"/>
+                    <Button Text="Calcular" BorderRadius="25" BackgroundColor="GhostWhite" TextColor="Black"/>
+                    <Label Text="Resultado"/>
+                    
+
+                 
+                </StackLayout>
+
+
+
+
+
+
+
+            </Grid>
+        </Grid>
+    </ContentPage>
+</TabbedPage>

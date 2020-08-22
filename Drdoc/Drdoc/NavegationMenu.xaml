@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Drdoc.NavegationMenu">
+  <!--Pages can be added as references or inline-->
+    <ContentPage>
+        
+        <Grid>
+            <!--<Image Source="logo.jpeg" Aspect="AspectFill"/>-->
+
+            <!--<BoxView Color="Aqua" Opacity="0.8"/>-->
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0" Text="Bienvenidos a Mr.Doc" HorizontalTextAlignment="Center" />
+                <!--<Label Text="Menú"/>-->
+                
+
+
+                <StackLayout Grid.Row="1" Padding="30,20">
+                    <Button x:Name="BtnRecordario" Clicked="BtnRecordario_Clicked" Text="Recordatorio"  />
+
+                    <Button x:Name="BtnPlanAlimenticio" Clicked="BtnPlanAlimenticio_Clicked" Text="Plan Alimenticio"  />
+
+                    <Button x:Name="BtnCalculoIMC" Clicked="BtnCalculoIMC_Clicked" Text="Cálculo de IMC"  />
+
+                    <Button x:Name="BtnContadorDePasos" Clicked="BtnContadorDePasos_Clicked" Text="Contador de pasos" />
+                    
+                </StackLayout>
+
+            </Grid>
+        </Grid>
+
+    </ContentPage>
+</TabbedPage>

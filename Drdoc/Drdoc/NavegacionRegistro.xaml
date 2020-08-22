@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Drdoc.NavegacionRegistro">
+  <!--Pages can be added as references or inline-->
+    <ContentPage>
+        
+        <StackLayout>
+            <Grid RowSpacing="25">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <StackLayout Grid.Row="1" HorizontalOptions="Center"  >
+                    <Label Text ="Crear Cuenta" TextColor="#B4995D" FontSize="19"  FontAttributes="Bold"/>
+                </StackLayout>
+                <StackLayout Grid.Row="2" HorizontalOptions="Center"  >
+                    <Entry Placeholder ="Nombre:" TextColor="#B4995D" FontSize="15"  FontAttributes="Bold" VerticalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Grid.Row="3" HorizontalOptions="Center"  >
+                    <Entry Placeholder ="Apellido:" TextColor="#B4995D" FontSize="15"  FontAttributes="Bold" VerticalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Grid.Row="4" HorizontalOptions="Center"  >
+                    <Entry Placeholder ="Correo:" TextColor="#B4995D" FontSize="15"  FontAttributes="Bold"/>
+                </StackLayout>
+                <StackLayout Grid.Row="5" HorizontalOptions="Center"  >
+                    <Entry Placeholder ="Contraseña:" TextColor="#B4995D" IsPassword="True" FontSize="15" FontAttributes="Bold"/>
+                </StackLayout>
+                <StackLayout Grid.Row="6" HorizontalOptions="Center">
+                    <Entry Placeholder="confirme contrasena:" TextColor="#B4995D" IsPassword="True" FontSize="15" FontAttributes="Bold"/>
+                </StackLayout>
+                <StackLayout Grid.Row="7">
+                    <Button Text="Crear Cuenta" HeightRequest="35" WidthRequest="185" BackgroundColor="#60BFC1" FontAttributes="Italic" HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"  />
+                </StackLayout>
+            </Grid>
+            <Editor Text="This is a read-only Editor" IsVisible="False" />
+        </StackLayout>
+    </ContentPage>
+</TabbedPage>

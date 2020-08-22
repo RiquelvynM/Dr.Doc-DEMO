@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Drdoc.NavegationOlvidoContrasena">
+  <!--Pages can be added as references or inline-->
+    <ContentPage>
+
+        <StackLayout>
+            <Label Text="Recuperacion de contrasena" VerticalOptions="Center" HorizontalOptions="CenterAndExpand"/>
+            <Entry Placeholder="Correo registrado"/>
+            <Button x:Name="BtnEnviarCodigo" Clicked="BtnEnviarCodigo_Clicked" Text="Enviar Codigo"/>
+
+        </StackLayout>
+        
+        
+        
+        
+    </ContentPage>
+</TabbedPage>

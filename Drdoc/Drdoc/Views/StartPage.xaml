@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="Drdoc.Views.StartPage">
+    <ContentPage.Content >
+        <Grid>
+            <!--<Image Source="Logo.jpeg" Aspect="AspectFill" />
+            <BoxView Color= "#F5D0C7" Opacity="0.8"/>-->
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+                <Image Grid.Row="0" Source="Logo.jpeg" WidthRequest="100" HeightRequest="100" Margin="0,50,0,30"/>
+
+                <StackLayout Grid.Row="1" Padding="10,20">
+                    <Label Text="Nombre de Usuario" TextColor="Black" FontSize="Small"/>
+                    <Entry Placeholder="User@drdoc.com" />
+                    <Label Text="Contraseña" TextColor="Black" FontSize="Small"/>
+                    <Entry Placeholder="************" IsPassword="True" MaxLength="3"/>
+                    <Button x:Name="BtnNavegationMenu"  Clicked="BtnNavegationMenu_Clicked" Text="Iniciar sesion" BackgroundColor="#5E9DF1" BorderRadius="20"/>
+                    
+                    <StackLayout Orientation="Horizontal">
+                        <Button x:Name="BtnOlvidoContrasena" Clicked="BtnOlvidoContrasena_Clicked" Text="Olvido su contraseña?" />
+                        <Button x:Name="BtnNavegationRegistro" Clicked="BtnNavegationRegistro_Clicked" Text="Registrarse" HorizontalOptions="EndAndExpand" />
+                    </StackLayout>
+                    
+                </StackLayout>
+                
+            </Grid>
+            
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

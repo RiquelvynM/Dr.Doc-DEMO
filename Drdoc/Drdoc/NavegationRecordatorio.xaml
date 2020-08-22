@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Drdoc.NavegationRecordatorio">
+  <!--Pages can be added as references or inline-->
+    <ContentPage>
+        <StackLayout Padding="10">
+            <Label Text="Recordatorio" FontSize="20" HorizontalOptions="Center"/>
+            <DatePicker x:Name="dp" MaximumDate="2020/12/31" MinimumDate="2019/12/31" Format="yyyy/dd/mm" />
+            <TimePicker x:Name="tp" />
+            <Button x:Name="Bttn" Clicked="Bttn_Clicked" />
+            <Label x:Name="details"/>
+        </StackLayout>
+
+    </ContentPage>
+ 
+</TabbedPage>

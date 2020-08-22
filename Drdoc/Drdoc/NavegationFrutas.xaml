@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Drdoc.NavegationFrutas">
+  <!--Pages can be added as references or inline-->
+
+    <ContentPage>
+        <Grid>
+            <Image Source="Fruta.jpeg" />
+            <Grid>
+            <StackLayout>
+                <Label Text="Plan Alimentico" TextColor="Black" FontSize="29" FontAttributes="Bold"/>
+                    <ContentView>
+
+                        <!--<Frame>
+                    <Label Text="Refigerio &#15; recetas para preparar &#10;una rica alimentacion"/>
+
+                </Frame>-->
+                    </ContentView>
+
+                </StackLayout>
+            </Grid>
+        </Grid>
+
+    </ContentPage>
+</TabbedPage>

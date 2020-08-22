@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Drdoc.NavegationCarnes">
+  <!--Pages can be added as references or inline-->
+
+    <ContentPage>
+        <Grid>
+            <Image Source="Pimiento.jpeg" WidthRequest="50" HeightRequest="100" />
+            <Grid>
+                <StackLayout  Grid.Row="1" VerticalOptions="Fill">
+
+                    <Label Text="Carnes" TextColor="#B4995D" FontSize="19"  FontAttributes="Bold"/>
+
+                    <Label Text="Pimiento Rellenos" FontSize="10"  FontAttributes="Bold"/>
+
+
+
+                    <ContentView>
+
+                        <!--<Frame>
+                    <Label Text="Una receta de aprovechamiento de &#08;sobras que nos alegra una comida o &#10; una cena.
+                     Podemos aprovechar unas &#10;sobras de quinoa con champiñones o &#10;de tabouleh de quinoa para rellenar &#10;
+                     unos pimientos del piquillo &#10;que, acompañados de una buena &#10;ensalada, harán un plato completo y muy nutritivo." FontSize="08"
+                    FontAttributes="Bold"/>
+                </Frame>-->
+
+                    </ContentView>
+                    <Button Text="Atras" BorderRadius="25" BackgroundColor="GhostWhite" TextColor="Black"/>
+
+                </StackLayout>
+            </Grid>
+            </Grid>
+    </ContentPage>
+
+</TabbedPage>

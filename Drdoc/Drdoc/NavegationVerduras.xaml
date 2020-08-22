@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Drdoc.NavegationVerduras">
+  <!--Pages can be added as references or inline-->
+    <ContentPage>
+        <Grid>
+            <Image Source="Lombarda.jpeg" WidthRequest="50" HeightRequest="100" Aspect="AspectFill" />
+
+            <Grid>
+                <StackLayout VerticalOptions="Fill">
+
+                    <Label Text="Verduras" TextColor="#B4995D" FontSize="19" FontAttributes="Bold"/>
+
+                    <Label Text="Lombarda Salteada" FontSize="10" FontAttributes="Bold"/>
+                    <ContentView>
+
+                        <Frame>
+                            <Label Text="Otro plato completamente &#10;vegetariano, esta vez para aprovechar &#10;el trozo de lombarda que sobró &#10;después de hacer la crema. Lombarda &#10;cortada en tiras y salteada con sal, &#10;pimienta y aceite de oliva virgen extra, &#10;calabacín y berenjena estofados con &#10;especias y unos pimientos del piquillo &#10;asados en el micro." FontSize="08"  FontAttributes="Bold"/>
+                        </Frame>
+
+
+                    </ContentView>
+
+
+                </StackLayout>
+            </Grid>
+        </Grid>
+
+    </ContentPage>
+</TabbedPage>

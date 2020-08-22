@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Drdoc.PlanAlimenticio">
+  <!--Pages can be added as references or inline-->
+    <ContentPage>
+        <Grid>
+          <Image Source="PlanAlimenticio.jpeg" Aspect="AspectFill" />
+            <Grid>
+            <StackLayout >
+             <Label Text="Plan Alimentico" TextColor="#B4995D" FontSize="19"  FontAttributes="Bold"/>
+            <Button x:Name="BtnFruta" Clicked="BtnFruta_Clicked" Text= "Fruta" />
+            <Button x:Name="BtnVerduras" Clicked="BtnVerduras_Clicked"  Text ="Verduras"/>
+            <Button x:Name="BtnCarnes" Clicked="BtnCarnes_Clicked" Text="Carnes "/>
+            </StackLayout>
+            </Grid>
+        </Grid>
+    </ContentPage>
+
+</TabbedPage>
